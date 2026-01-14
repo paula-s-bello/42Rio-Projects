@@ -1,4 +1,4 @@
-# 📚 Projetos da 42
+# Projetos da 42
 
 Este repositório reúne meus projetos desenvolvidos durante o curso da **42**, uma escola de programação com metodologia baseada em aprendizado prático, projetos e avaliação entre pares.
 
@@ -6,7 +6,7 @@ Aqui você encontrará implementações em **C** (principalmente), seguindo as *
 
 ---
 
-## 🏫 Sobre a 42
+## Sobre a 42
 
 A 42 é uma escola de programação sem professores ou aulas tradicionais. O aprendizado acontece por meio de:
 
@@ -22,7 +22,7 @@ Todos os projetos seguem regras rigorosas, incluindo:
 
 ---
 
-## 📁 Estrutura do Repositório
+## Estrutura do Repositório
 
 Cada pasta corresponde a um projeto do cursus da 42:
 
@@ -43,7 +43,7 @@ Dentro de cada projeto você encontrará:
 
 ---
 
-## 🛠️ Projetos
+## Projetos
 
 ### 🔹 Libft
 
@@ -81,7 +81,7 @@ Projeto de administração de sistemas.
 
 ---
 
-## ⚙️ Compilação
+## Compilação
 
 A maioria dos projetos utiliza `Makefile`. Para compilar:
 
@@ -103,7 +103,7 @@ make fclean
 
 ---
 
-## ✅ Normas
+## Normas
 
 Todos os códigos seguem:
 
@@ -116,7 +116,7 @@ Todos os códigos seguem:
 
 ---
 
-## 🚀 Objetivo
+## Objetivo
 
 Este repositório tem como objetivo:
 
@@ -126,19 +126,11 @@ Este repositório tem como objetivo:
 
 ---
 
-## ⚠️ Aviso
+## ‍💻 Autora
 
-Se você é estudante da 42:
-
-> ⚠️ **Não copie os projetos.** Use este repositório apenas como referência de estudo.
-
----
-
-## 👩‍💻 Autora
-
-**Paula Cristina**
+**Paula Cristina - pdos-san**
 Estudante da 42
 
 ---
 
-📌 *Este repositório está em constante atualização.*
+*Este repositório está em constante atualização.*
