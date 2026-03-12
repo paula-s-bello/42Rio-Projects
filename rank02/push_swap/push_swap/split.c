@@ -56,10 +56,17 @@ char	**ft_split_spaces(char *s)
 {
 	char	**split;
 	int		words;
+	int		i;
 
 	words = count_words(s);
 	split = malloc(sizeof(char *) * (words + 1));
 	if (!split)
 		return (NULL);
+	i = 0;
+	while (i < words + 1)
+	{
+		split[i] = NULL;
+		i++;
+	}
 	return (fill_split(split, s));
 }

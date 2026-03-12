@@ -32,22 +32,28 @@ static void	parse_args(t_node **a, int ac, char **av)
 	}
 }
 
-int	main(int ac, char **av)
+int	main(int argc, char **argv)
 {
 	t_node	*a;
 	t_node	*b;
+	int		size;
 
-	if (ac < 2)
-		return (0);
 	a = NULL;
 	b = NULL;
-	parse_args(&a, ac, av);
+	parse_args(argc, argv, &a);
 	if (is_sorted(a))
 	{
 		free_stack(&a);
 		return (0);
 	}
 	index_stack(a);
+	size = stack_size(a);
+	if (size <= 5)
+	{
+		sort_small(&a, &b);
+		free_stack(&a);
+		return (0);
+	}
 	chunk_sort(&a, &b);
 	free_stack(&a);
 	return (0);

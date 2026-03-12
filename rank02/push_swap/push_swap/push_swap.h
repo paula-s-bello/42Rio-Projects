@@ -51,5 +51,6 @@ void	add_args_to_stack(t_node **a, char **args);
 char	**ft_split_spaces(char *s);
 char	**fill_split(char **split, char *s);
 void	free_split(char **split);
+void	sort_small(t_node **a, t_node **b);
 
 #endif

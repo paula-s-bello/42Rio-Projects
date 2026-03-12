@@ -4,9 +4,9 @@ CC	= cc
 CFLAGS	= -Wall -Wextra -Werror
 
 SRCS	= main.c \
-		stack.c \
 		split.c \
 		split_utils.c \
+		small_sort.c \
 	  parsing.c \
 	  stack.c \
 	  index.c \
