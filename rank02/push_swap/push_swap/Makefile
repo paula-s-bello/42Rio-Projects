@@ -4,13 +4,17 @@ CC	= cc
 CFLAGS	= -Wall -Wextra -Werror
 
 SRCS	= main.c \
+		stack.c \
+		split.c \
+		split_utils.c \
 	  parsing.c \
 	  stack.c \
 	  index.c \
 	  operations_swap.c \
 	  operations_push.c \
 	  operations_rotate.c \
-	  chunk_sort.c
+	  chunk_sort.c \
+	  utils.c
 
 OBJS	= $(SRCS:.c=.o)
 

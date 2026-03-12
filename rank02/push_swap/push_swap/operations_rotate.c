@@ -1,3 +1,14 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   operations_rotate.c                                :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: pdos-san <pdos-san@student.42.rio>         +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2026/03/12 18:10:58 by pdos-san          #+#    #+#             */
+/*   Updated: 2026/03/12 18:17:46 by pdos-san         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 #include "push_swap.h"
 
 void	ra(t_node **a)
@@ -22,7 +33,7 @@ void	rb(t_node **b)
 	t_node	*first;
 	t_node	*last;
 
-	if(!*b || !(*b)->next)
+	if (!*b || !(*b)->next)
 		return ;
 	first = *b;
 	*b = first->next;
@@ -60,7 +71,7 @@ void	rrb(t_node **b)
 	t_node	*last;
 
 	if (!*b || !(*b)->next)
-		return;
+		return ;
 	prev = NULL;
 	last = *b;
 	while (last->next)
