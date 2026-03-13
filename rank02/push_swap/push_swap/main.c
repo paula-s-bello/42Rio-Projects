@@ -40,7 +40,7 @@ int	main(int argc, char **argv)
 
 	a = NULL;
 	b = NULL;
-	parse_args(argc, argv, &a);
+	parse_args(&a, argc, argv);
 	if (is_sorted(a))
 	{
 		free_stack(&a);

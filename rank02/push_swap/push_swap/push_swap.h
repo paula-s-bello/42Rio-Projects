@@ -42,7 +42,7 @@ void	index_stack(t_node *a);
 void	chunk_sort(t_node **a, t_node **b);
 
 /* parsing / utils */
-long	ft_atol(const char *s);
+int		ft_atol(const char *s, long *out);
 int		is_sorted(t_node *a);
 void	error_exit(void);
 void	free_stack(t_node **stack);

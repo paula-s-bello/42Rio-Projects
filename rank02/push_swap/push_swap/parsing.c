@@ -17,7 +17,7 @@ void	error_exit(void)
 	exit(1);
 }
 
-long	ft_atol(const char *s)
+int	ft_atol(const char *s, long *out)
 {
 	long	r;
 	int		sign;
@@ -31,17 +31,18 @@ long	ft_atol(const char *s)
 		s++;
 	}
 	if (!*s)
-		error_exit();
+		return (0);
 	while (*s)
 	{
 		if (*s < '0' || *s > '9')
-			error_exit();
+			return (0);
 		r = (r * 10) + (*s - '0');
 		if ((r * sign) > INT_MAX || (r * sign) < INT_MIN)
-			error_exit();
+			return (0);
 		s++;
 	}
-	return (r * sign);
+	*out = r * sign;
+	return (1);
 }
 
 int	has_duplicate(t_node *stack, int value)
@@ -63,7 +64,12 @@ void	add_args_to_stack(t_node **a, char **args)
 	i = 0;
 	while (args[i])
 	{
-		value = ft_atol(args[i]);
+		if (!ft_atol(args[i], &value))
+		{
+			free_stack(a);
+			free_split(args);
+			error_exit();
+		}
 		if (has_duplicate(*a, (int)value))
 		{
 			free_stack(a);
