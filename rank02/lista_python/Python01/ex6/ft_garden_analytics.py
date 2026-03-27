@@ -97,7 +97,8 @@ class Tree(Plant):
             super().display()
             print(f"produce_shade() calls: {self._shade_calls}")
 
-    def __init__(self, name: str, height: float, age: int, trunk_diameter: float) -> None:
+    def __init__(self, name: str, height: float,
+                 age: int, trunk_diameter: float) -> None:
         super().__init__(name, height, age)
         self.trunk_diameter = trunk_diameter
         self._stats = Tree._TreeStats()
